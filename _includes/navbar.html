@@ -28,26 +28,9 @@
 
         <div class="uk-navbar-right">
 
-          <div>
-              <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
-              <div class="uk-drop uk-background-primary" uk-drop="mode: click; pos: left-center; offset: 0">
-                  <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                      <input id="navbar-search" class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                  </form>
-                  <ul id="navbar-search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-              </div>
-          </div>
-          <script>
-          SimpleJekyllSearch({
-              searchInput: document.getElementById('navbar-search'),
-              resultsContainer: document.getElementById('navbar-search-results'),
-              noResultsText: '<li>No results found</li>',
-              searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-              json: '/search.json'
-          });
-          </script>
-
-          <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+          <a class="uk-navbar-toggle uk-hidden@m-" href="#mobile" data-uk-toggle>
+              <span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+          </a>
 
         </div>
 

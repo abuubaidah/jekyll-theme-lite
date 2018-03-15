@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/ && ncp node_modules/system-font-css/ _sass/system-font-css/",
+    "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/",
     "lint": "jshint assets/js/custom.js",
-    "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js assets/js/custom.js -m -c -o assets/js/main.js",
-    "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js assets/js/custom.js -b -o assets/js/main.js",
+    "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js assets/js/custom.js -m -c -o assets/js/main.js",
+    "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js assets/js/custom.js -b -o assets/js/main.js",
     "dev": "npm run lint && npm run concat",
     "build": "npm run lint && npm run uglify",
     "watch": "watch 'npm run dev' assets/js/",
@@ -25,8 +25,6 @@
   },
   "homepage": "https://github.com/",
   "dependencies": {
-    "simple-jekyll-search": "^1.5.0",
-    "system-font-css": "^2.0.1",
     "uikit": "^3.0.0-beta.40"
   },
   "devDependencies": {

@@ -95,10 +95,12 @@ $tm-primary-color-dark: rgba(0, 0, 0, 0.2); //#0404042b; //darken($tm-primary-co
 // $tm-primary-color-xdark: darken($tm-primary-color, 14%);
 $tm-primary-color-light: rgba(255, 255, 255, 0.1); //#ffffff21; //lighten($tm-primary-color, 7%);
 $base-body-background: $tm-primary-color;
+//$tm-inverse-color-light: rgba(255, 255, 255, 0.8);
 
 $tm-letter-spacing-l: 3px;
-$tm-timeline-border-width: 4px;
-$tm-timeline-dot-diameter: 20px;
+$tm-timeline-border-width: 2px;
+$tm-timeline-dot-diameter: 14px;
+$tm-timeline-color: $tm-primary-color;
 
 $global-font-family: 'Work Sans', sans-serif;
 $global-font-size: 18px;
@@ -112,7 +114,8 @@ $base-body-font-weight: 200;
 $global-primary-background: $tm-primary-color;
 $global-link-color: $tm-primary-color;
 $navbar-background: $tm-primary-color;
-$inverse-global-color: rgba(255, 255, 255, 0.8);
+$inverse-global-color: #fff;
+$inverse-global-muted-color: rgba($inverse-global-color, 0.8);
 $base-heading-font-weight: 800;
 $base-link-hover-text-decoration: none;
 $subnav-item-text-transform: none;
@@ -148,10 +151,10 @@ $inverse-search-navbar-background: $tm-primary-color-dark;
 // $base-code-font-size: $global-small-font-size !default;
 // $base-code-font-family: Consolas, monaco, monospace !default;
 // $base-code-color: green; //$global-danger-background !default;
-$base-pre-color: #fff;
-$base-pre-font-size: 14px;
+$base-pre-color: $inverse-global-color;
+$base-pre-font-size: 15px;
 $base-pre-line-height: 1.5;
-$inverse-base-code-color: #fff;
+$inverse-base-code-color: $inverse-global-color;
 //$animation-fade-duration: 1s;
 $card-primary-background: rgba(255, 255, 255, 0.03);
 $card-primary-box-shadow: 0 9px 20px rgba(0,0,0,0.16);
