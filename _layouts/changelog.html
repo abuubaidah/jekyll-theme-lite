@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<div class="uk-section">
+<section class="tm-margin-large-top">
     <div class="uk-container uk-container-small">
 
         <article class="uk-article">
 
-            <h1 class="uk-heading-hero uk-text-center text-shadow">{{ page.title | escape }}</h1>
+            <h1 class="uk-heading-hero uk-margin-medium-bottom uk-text-center text-shadow">{{ page.title | escape }}</h1>
 
             <div class="article-content">
                 {{ content }}
             </div>
 
-            <div class="tm-timeline uk-margin-large-top">
+            <div class="tm-timeline">
                 {% for version in site.data.changelog %}
                 <div class="tm-timeline-entry uk-margin-xlarge-top">
                     <div class="tm-timeline-time">
@@ -34,4 +34,4 @@ layout: default
         </article>
 
     </div>
-</div>
+</section>

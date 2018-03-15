@@ -1,9 +1,9 @@
 ---
 layout: default
-title: News
+title: What's New
 ---
 
-<div class="uk-section">
+<section class="tm-margin-large-top news">
     <div class="uk-container uk-container-small">
 
         <h1 class="uk-heading-hero uk-text-center">{{ page.title | escape }}</h1>
@@ -21,7 +21,7 @@ title: News
 
                     <div class="uk-width-auto">
                         {% if author.github %}
-                            {% avatar {{ author.github }} size=40 %}
+                            {% avatar {{ author.github }} size=56 %}
                         {% endif %}
                     </div>
                     <div class="uk-width-expand">
@@ -37,7 +37,7 @@ title: News
                 {{ post.excerpt }}
             </div>
             <div class="uk-card-footer">
-                <span class="uk-button-">Read more &rarr;</span>
+                <span class="uk-button-">Read more</span>
             </div>
 
         </div>
@@ -46,4 +46,4 @@ title: News
         {% include paginate-blog.html %}
 
     </div>
-</div>
+</section>

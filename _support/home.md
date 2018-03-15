@@ -3,7 +3,7 @@ title: Jekyll Publishing
 icon: settings
 ---
 
-#### Sections in this article
+### Sections in this article
 {:.no_toc}
 * TOC
 {:toc}
