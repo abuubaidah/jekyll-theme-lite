@@ -1,158 +1,72 @@
-// // Color scheme variables
-//
-// // Main content
-// $color-main: #0F1214;
-//
-// // Secondary content
-// $global-muted-color: #7a838a;
-//
-// // Accent color
-// $global-primary-background: $color-main;
-//
-// // Link and botton hover
-// $color-hover: #000;
-//
-// // Standard UIkit
-// //$global-muted-background: ;
-// $global-border: #c4c7ca;
-//
-// // Global
-// $global-font-family: system-ui;
-// $global-link-color: $global-muted-color;
-// $global-link-hover-color: $color-hover;
-//
-$global-xxlarge-font-size: 2.6111rem;
-$global-xlarge-font-size: 2.222rem;
-$global-large-font-size: 1.778rem;
-$global-medium-font-size: 1.333rem;
-$global-small-font-size: 0.8889rem;
-//
-// // Base
-// $base-heading-color: $color-main;
-// $link-muted-hover-color: $color-main;
-// $button-primary-hover-background: $color-hover;
-// $base-hr-border: lighten($global-border, 13%);
-// $text-lead-font-size: 1.125rem;
-// $base-heading-font-weight: bold;
-// $base-heading-margin-top: 50px;
-// // $base-body-font-weight: 300;
-// $base-h2-line-height: 1.4;
-// $base-link-hover-text-decoration: underline;
-// $base-h5-font-size:                              $global-font-size !default;
-// $base-h6-font-size:                              $global-small-font-size !default;
-//
-// // Navbar
-// $navbar-background: #fff;
-// $navbar-nav-item-color: $global-muted-color;
-// $navbar-nav-item-hover-color: $color-main;
-// $navbar-nav-item-active-color: $color-main;
-// $navbar-toggle-color: $global-muted-color;
-// $navbar-toggle-hover-color: $color-main;
-//
-// // Subnav
-// $subnav-item-color: $global-muted-color;
-// $subnav-item-hover-color: $color-main;
-//
-// // Pagination links
-// $pagination-item-color: $color-main;
-// $pagination-item-hover-color: $color-main;
-//
-// $article-meta-font-size: 	0.8125rem;
-// $article-meta-line-height: 1.3;
-//
-// $container-max-width: 1100px;
-$container-small-max-width: 800px;
-//
-// $card-small-body-padding-horizontal:            25px;
-// $card-small-body-padding-vertical:              25px;
-//
-// $article-title-line-height: 1.4;
-// $article-title-font-size: 1.875rem;
-// $offcanvas-bar-color-mode: dark;
-// $offcanvas-bar-background: #fff;
-//
-$heading-hero-font-size: 2.222rem;
-$heading-hero-line-height: 1.2;
-$heading-hero-font-size-s: 3.667rem;
-$heading-hero-line-height-s: 1.2;
-$heading-hero-font-size-m: 4.6111rem;
-$heading-hero-line-height-m: 1.2;
-//
-// $navbar-nav-item-text-transform: none;
-//
-// $subnav-item-text-transform: none;
-//
-// $search-default-border:  darken($global-border, 15%);
-
+// Color scheme variables
 $tm-xsmall-font-size: 0.7rem;
 $tm-primary-color: #0089ff; //#007eff; //#6713d2; //#007eff;
-$tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%); //linear-gradient(to top, #cc208e 0%, #6713d2 100%);; //linear-gradient(to top, #3300fd 0%, #007eff 100%);
-$tm-primary-color-dark: rgba(0, 0, 0, 0.2); //#0404042b; //darken($tm-primary-color, 7%);
+$tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%); //linear-gradient(to top, #cc208e 0%, #6713d2 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%);
+$tm-primary-color-dark: rgba(0, 0, 0, 0.2);
 $tm-primary-color-xdark: rgba(0, 0, 0, 0.3);
-$tm-primary-color-light: rgba(255, 255, 255, 0.1); //#ffffff21; //lighten($tm-primary-color, 7%);
-$base-body-background: $tm-primary-color;
-//$tm-inverse-color-light: rgba(255, 255, 255, 0.8);
+$tm-primary-color-light: rgba(255, 255, 255, 0.1);
 
 $tm-letter-spacing-l: 3px;
 $tm-timeline-border-width: 2px;
 $tm-timeline-dot-diameter: 14px;
 $tm-timeline-color: $tm-primary-color;
 
+// Global
+$global-xxlarge-font-size: 2.6111rem;
+$global-xlarge-font-size: 2.222rem;
+$global-large-font-size: 1.778rem;
+$global-medium-font-size: 1.333rem;
+$global-small-font-size: 0.8889rem;
 $global-font-family: 'Work Sans', sans-serif;
 $global-font-size: 18px;
-$base-heading-font-family: 'Nunito Sans', sans-serif;
-// $heading-hero-font-size: 3rem;
-// $heading-hero-font-size-s: 4rem;
-// $heading-hero-font-size-m: 4.6rem;
-// $global-xxlarge-font-size: 3.6rem;
-// $global-xlarge-font-size: 2.6rem;
-$base-body-font-weight: 200;
 $global-primary-background: $tm-primary-color;
 $global-link-color: $tm-primary-color;
-$navbar-background: $tm-primary-color;
+$global-inverse-color: #fff;
+
 $inverse-global-color: #fff;
 $inverse-global-muted-color: rgba($inverse-global-color, 0.8);
+$inverse-logo-color: $global-inverse-color;
+$inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.7);
+$inverse-navbar-nav-item-hover-color: $global-inverse-color;
+$inverse-navbar-toggle-color: rgba(255, 255, 255, 0.7);
+$inverse-navbar-toggle-hover-color: $global-inverse-color;
+$inverse-search-navbar-background: $tm-primary-color-dark;
+$inverse-base-code-color: $inverse-global-muted-color;
+
+// Base
+$base-body-background: $tm-primary-color;
+$base-heading-font-family: 'Nunito Sans', sans-serif;
+$base-body-font-weight: 200;
 $base-heading-font-weight: 200;
 $base-link-hover-text-decoration: none;
+$base-pre-color: $inverse-global-muted-color;
+$base-pre-font-size: 15px;
+$base-pre-line-height: 1.5;
+
+$heading-hero-font-size: 2.222rem;
+$heading-hero-line-height: 1.2;
+$heading-hero-font-size-s: 3.667rem;
+$heading-hero-line-height-s: 1.2;
+$heading-hero-font-size-m: 4.6111rem;
+$heading-hero-line-height-m: 1.2;
+
+$navbar-background: $tm-primary-color;
+$navbar-dropdown-nav-item-color: rgba(255, 255, 255, 0.7);
+$navbar-dropdown-nav-item-hover-color: $global-inverse-color;
+$navbar-nav-item-text-transform: none;
+$search-navbar-font-size: 1.0625rem; //$global-font-size;
 $subnav-item-text-transform: none;
+
+$container-small-max-width: 800px;
 $progress-background: $tm-primary-color-dark;
-// $progress-bar-background: $tm-primary-color-xdark;
-
-// @import "../../node_modules/uikit/src/scss/variables-theme.scss";
-// @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
-  $global-inverse-color: #fff;
-  $background-default-background: #fff;
-
+$background-default-background: #fff;
 $table-divider-border: rgba(255, 255, 255, 0.3);
 $container-small-max-width: 740px;
 $container-max-width: 1060px;
 $logo-font-size: 1.2rem;
-$inverse-logo-color: $global-inverse-color;
-$inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.7);
-$inverse-navbar-nav-item-hover-color: $global-inverse-color;
-$navbar-dropdown-nav-item-color: rgba(255, 255, 255, 0.7);
-$navbar-dropdown-nav-item-hover-color: $global-inverse-color;
-$inverse-navbar-toggle-color: rgba(255, 255, 255, 0.7);
-$inverse-navbar-toggle-hover-color: $global-inverse-color;
-// $offcanvas-bar-background: $tm-primary-color-xdark;
-$navbar-nav-item-text-transform: none;
 $button-default-background: $background-default-background;
-
 $article-title-font-size: $global-xxlarge-font-size;
 $article-title-line-height: 1.1;
-// Added
-$search-navbar-font-size: 1.0625rem; //$global-font-size;
-$inverse-search-navbar-background: $tm-primary-color-dark;
-//$search-navbar-height: 80px;
-
-// $base-code-font-size: $global-small-font-size !default;
-// $base-code-font-family: Consolas, monaco, monospace !default;
-// $base-code-color: green; //$global-danger-background !default;
-$base-pre-color: $inverse-global-muted-color;
-$base-pre-font-size: 15px;
-$base-pre-line-height: 1.5;
-$inverse-base-code-color: $inverse-global-muted-color;
-//$animation-fade-duration: 1s;
 $card-primary-background: rgba(255, 255, 255, 0.03);
 $card-primary-box-shadow: 0 9px 20px rgba(0,0,0,0.16);
 $card-primary-hover-box-shadow: 0 22px 40px rgba(0,0,0,0.16);
