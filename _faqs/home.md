@@ -1,8 +1,8 @@
 ---
-layout: doc
-title: Design tips for choosing great images
+ 
+title: Creating new page in Jekyll and publishing
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
-author:
+tags: featured
 ---
 
 #### Sections in this article

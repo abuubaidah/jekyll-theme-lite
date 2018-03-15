@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: faq
+title: Frequently Asked Questions
 hero:
     title: How Can We Help?
     subtitle: WELCOME TO COOL APP SUPPORT

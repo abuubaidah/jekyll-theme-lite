@@ -28,7 +28,6 @@
 // $global-small-font-size: 0.875rem;
 //
 // // Base
-// $base-body-color: $color-main;
 // $base-heading-color: $color-main;
 // $link-muted-hover-color: $color-main;
 // $button-primary-hover-background: $color-hover;
@@ -66,7 +65,7 @@
 // $article-meta-line-height: 1.3;
 //
 // $container-max-width: 1100px;
-// $container-small-max-width: 800px;
+$container-small-max-width: 800px;
 //
 // $card-small-body-padding-horizontal:            25px;
 // $card-small-body-padding-vertical:              25px;
@@ -90,9 +89,13 @@
 // $search-default-border:  darken($global-border, 15%);
 
 $tm-xsmall-font-size: 0.7rem;
-$tm-primary-color: #2196F3;
-$tm-primary-color-dark: #067be2; //#1E88E5;
-$tm-primary-color-xdark: #1976D2;
+$tm-primary-color: #0089ff; //#007eff; //#6713d2; //#007eff;
+$tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%); //linear-gradient(to top, #cc208e 0%, #6713d2 100%);; //linear-gradient(to top, #3300fd 0%, #007eff 100%);
+$tm-primary-color-dark: rgba(0, 0, 0, 0.2); //#0404042b; //darken($tm-primary-color, 7%);
+// $tm-primary-color-xdark: darken($tm-primary-color, 14%);
+$tm-primary-color-light: rgba(255, 255, 255, 0.1); //#ffffff21; //lighten($tm-primary-color, 7%);
+$base-body-background: $tm-primary-color;
+
 $tm-letter-spacing-l: 3px;
 $tm-timeline-border-width: 4px;
 $tm-timeline-dot-diameter: 20px;
@@ -102,7 +105,7 @@ $global-font-size: 18px;
 $base-heading-font-family: 'Nunito Sans', sans-serif;
 $heading-hero-font-size: 3rem;
 $heading-hero-font-size-s: 4rem;
-$heading-hero-font-size-m: 5.2rem;
+$heading-hero-font-size-m: 4.6rem;
 $global-xxlarge-font-size: 3.6rem;
 $global-xlarge-font-size: 2.6rem;
 $base-body-font-weight: 200;
@@ -114,7 +117,7 @@ $base-heading-font-weight: 800;
 $base-link-hover-text-decoration: none;
 $subnav-item-text-transform: none;
 $progress-background: $tm-primary-color-dark;
-$progress-bar-background: $tm-primary-color-xdark;
+// $progress-bar-background: $tm-primary-color-xdark;
 
 // @import "../../node_modules/uikit/src/scss/variables-theme.scss";
 // @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
@@ -122,7 +125,8 @@ $progress-bar-background: $tm-primary-color-xdark;
   $background-default-background: #fff;
 
 $table-divider-border: rgba(255, 255, 255, 0.3);
-$container-max-width: 1000px;
+$container-small-max-width: 740px;
+$container-max-width: 1060px;
 $logo-font-size: 1.2rem;
 $inverse-logo-color: $global-inverse-color;
 $inverse-navbar-nav-item-color: rgba(255, 255, 255, 0.7);
@@ -131,7 +135,7 @@ $navbar-dropdown-nav-item-color: rgba(255, 255, 255, 0.7);
 $navbar-dropdown-nav-item-hover-color: $global-inverse-color;
 $inverse-navbar-toggle-color: rgba(255, 255, 255, 0.7);
 $inverse-navbar-toggle-hover-color: $global-inverse-color;
-$offcanvas-bar-background: $tm-primary-color-xdark;
+// $offcanvas-bar-background: $tm-primary-color-xdark;
 $navbar-nav-item-text-transform: none;
 $button-default-background: $background-default-background;
 $article-title-font-size: 2.2rem;
@@ -140,3 +144,15 @@ $article-title-font-size: 2.2rem;
 $search-navbar-font-size: 1.0625rem; //$global-font-size;
 $inverse-search-navbar-background: $tm-primary-color-dark;
 //$search-navbar-height: 80px;
+
+// $base-code-font-size: $global-small-font-size !default;
+// $base-code-font-family: Consolas, monaco, monospace !default;
+// $base-code-color: green; //$global-danger-background !default;
+$base-pre-color: #fff;
+$base-pre-font-size: 14px;
+$base-pre-line-height: 1.5;
+$inverse-base-code-color: #fff;
+//$animation-fade-duration: 1s;
+$card-primary-background: rgba(255, 255, 255, 0.03);
+$card-primary-box-shadow: 0 9px 20px rgba(0,0,0,0.16);
+$card-primary-hover-box-shadow: 0 22px 40px rgba(0,0,0,0.16);

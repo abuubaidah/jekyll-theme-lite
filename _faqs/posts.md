@@ -1,13 +1,11 @@
 ---
-layout: doc
-title: Category hosting Setting up new domain and page
+ 
+title: Accepted currencies for product billing
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
 author:
 tags: featured
 ---
 
-#### Sections in this article
-{:.no_toc}
 * TOC
 {:toc}
 

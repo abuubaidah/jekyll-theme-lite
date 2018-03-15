@@ -270,7 +270,7 @@ Create new doc post entries in `_docs` folder, similar to creating posts, but wi
 
 ```yml
 ---
-layout: doc
+
 title: Category hosting Setting up new domain and page
 subtitle: This is optional doc subtitle
 tags: featured development

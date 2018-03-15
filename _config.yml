@@ -94,4 +94,6 @@ sass:
 
 collections:
   support:
-    output: true
+    output: false
+  faqs:
+    output: false

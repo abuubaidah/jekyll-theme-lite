@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<section class="tm-margin-large-top tm-faq">
+  <div class="uk-container">
+
+    <div class="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
+      <div><h1 class="uk-margin-medium-bottom uk-heading-hero text-shadow">{{ page.title }}</h1></div>
+      <div>
+        <ul class="uk-list uk-list-large">
+          {% for article in site.faqs %}
+            <li><a href="#{{ article.title | slugify }}" data-uk-scroll="duration: 400; offset: 140" class="hvr-forward"><span data-uk-icon="icon: arrow-right"></span> {{ article.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <hr class="uk-margin-large-top uk-margin-remove-bottom">
+  </div>
+  <div class="uk-container uk-container-small">
+
+    {% for article in site.faqs %}
+
+      <article id="{{ article.title | slugify }}" class="article uk-article uk-margin-xlarge-top">
+        <h2 class="uk-article-title uk-margin-medium-bottom">{{ article.title }}<a href="#" data-uk-totop data-uk-scroll="duration: 400" class="tm-totop uk-float-right uk-margin-small-top"></a></h2>
+        {{ article.content }}
+      </article>
+
+    {% endfor %}
+
+  </div>
+</section>
+
+{% if page.cta %}
+  {% include cta.html %}
+{% endif %}

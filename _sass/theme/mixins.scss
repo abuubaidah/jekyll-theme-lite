@@ -326,7 +326,7 @@
     #markdown-toc {
         padding: 0;
         list-style: none;
-        margin: $global-medium-margin 0 0 0;
+        margin: $global-medium-margin 0 $global-xlarge-margin 0;
         > li {
           margin-top: $list-large-margin-top;
         }
@@ -358,6 +358,12 @@
         }
 
     }
+
+    .hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
 //     #hero-search-results, #navbar-search-results {
 //         margin: 10px 0 0 0;
 //         z-index: 1;
@@ -472,16 +478,58 @@
 //         }
 //     }
 // }
-
-.home-content {
+.article + .article {
+  margin-top: $global-xlarge-margin;
+}
+.article-support {
   > h2 {
     margin-top: $global-xlarge-margin;
     margin-bottom: $global-medium-margin;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 2rem;
+    //letter-spacing: 0;
   }
 }
-
+.article-support-rule {
+  margin: 0;
+  + p {
+    margin-top: $global-xlarge-margin;
+  }
+}
+.news {
+  .uk-card {
+    background: $tm-primary-color-light;
+  }
+  .uk-card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .uk-card-footer {
+    font-size: 0.875rem;
+  }
+ }
+@mixin hook-base-pre(){
+  margin: $global-medium-margin 0;
+  background: $tm-primary-color-light;
+  padding: 20px 25px;
+  border-radius: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+@mixin hook-inverse-base-code(){
+  padding: 3px 7px;
+  border-radius: 2px;
+  letter-spacing: 0;
+  background: $tm-primary-color-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
 @mixin hook-base-misc(){
+  body {
+    background-image: $tm-body-background;
+  }
     .tm-text-xsmall {
         font-size: $tm-xsmall-font-size;
     }
@@ -490,9 +538,15 @@
         background: $tm-primary-color-dark;
     }
 
-    .tm-primary-color-xdark {
-        background: $tm-primary-color-xdark;
+    // .tm-primary-color-xdark {
+    //     background: $tm-primary-color-xdark;
+    // }
+    .text-shadow {
+      //text-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      text-shadow: 0 14px 25px rgba(0,0,0,0.16);
     }
+    //.text-shadow-large: 0 28px 50px rgba(0,0,0,0.16);
+
     .letter-spacing-l {
         letter-spacing: $tm-letter-spacing-l;
     }
@@ -512,6 +566,23 @@
     .hvr-forward:hover {
         -webkit-transform: translateX(6px);
         transform: translateX(6px);
+    }
+    .hvr-back {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+    }
+    .hvr-back:hover,
+    .hvr-back:focus,
+    .hvr-back:active {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
     }
 }
 @mixin hook-base-body(){
@@ -545,25 +616,29 @@
     }
 }
 
-@mixin hook-navbar-container(){
-    border-bottom: 1px solid lighten($tm-primary-color, 4%);
-}
+// @mixin hook-navbar-container(){
+//     border-bottom: 1px solid lighten($tm-primary-color, 4%);
+// }
 @mixin hook-list-misc(){
-    .uk-list-large, #markdown-toc {
+    #markdown-toc {
         font-size: 1.2rem
     }
     .uk-list-medium > li:nth-child(n+2),
     .uk-list-medium > li > ul { margin-top: $list-margin-top * 1.5; }
 }
+
 @mixin hook-card-misc(){
+  .uk-card-primary {
+    //border: solid 1px rgba(0,0,0,0.03);
+  }
     .uk-card-box {
-        color: $global-inverse-color;
-        background: $tm-primary-color-dark;
+        // color: $global-inverse-color;
+        // background: $tm-primary-color-dark;
         text-decoration: none;
         padding: 30px;
-        &:hover {
+        &:hover, &.active {
             text-decoration: none;
-            background: #1976D2;
+            // background: $tm-primary-color-xdark;
         }
         p{
             font-size: 1.1rem;
@@ -721,8 +796,10 @@
 }
 
 @media (min-width: $breakpoint-medium) {
-    .tm-faq .uk-article,
-    .tm-faq .uk-list {
+    .tm-faq .uk-heading-hero {
+      line-height: 1.2;
+    }
+    .tm-faq .uk-article {
         position: relative;
         margin-left: 160px;
 

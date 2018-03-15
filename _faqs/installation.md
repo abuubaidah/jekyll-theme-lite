@@ -1,9 +1,9 @@
 ---
-layout: doc
-title: Settings up Jekkyl on Github pages
+ 
+title: Getting started with our application
 subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
-tags:
 author:
+tags: featured
 ---
 
 #### Sections in this article

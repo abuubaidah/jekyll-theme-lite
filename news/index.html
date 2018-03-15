@@ -4,12 +4,12 @@ title: News
 ---
 
 <div class="uk-section">
-    <div class="uk-container uk-container-xsmall">
+    <div class="uk-container uk-container-small">
 
-        <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+        <h1 class="uk-heading-hero uk-text-center">{{ page.title | escape }}</h1>
 
         {% for post in paginator.posts %}
-        <div class="uk-card card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin">
+        <div class="uk-card uk-card-primary uk-card-hover card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin-medium">
             <a class="uk-position-cover" href="{{ post.url | relative_url }}"></a>
             <div class="uk-card-header">
                 <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -37,7 +37,7 @@ title: News
                 {{ post.excerpt }}
             </div>
             <div class="uk-card-footer">
-                <span class="uk-button uk-button-text">Read more &rarr;</span>
+                <span class="uk-button-">Read more &rarr;</span>
             </div>
 
         </div>

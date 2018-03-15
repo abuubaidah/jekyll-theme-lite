@@ -1,8 +1,8 @@
 ---
-layout: doc
-title: Purchasing domain name and DNS setup
-subtitle: Cras at dolor eget urna varius faucibus tempus in elit. Cras a dui imperdiet, tempus metus quis, pharetra turpis.
-author:
+ 
+title: Cancelling a website subscription
+subtitle: Vestibulum ante ipsum primis orci luctus et ultrices posuere cubilia Curae.
+tags: featured
 ---
 
 #### Sections in this article
