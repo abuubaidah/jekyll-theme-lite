@@ -5,8 +5,8 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              QA - FAQ Jekyll Theme
-description:        FAQ Jekyll theme.
+title:              Lite
+description:        Helpdesk Jekyll Theme
 
 # Site subpath, e.g. /blog
 baseurl:            ""
@@ -15,12 +15,12 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://qa.jekyll.plus"
+url:                "https://lite.jekyll.plus"
 
 # Site logo, image or text
 brand:
     image:          # e.g. logo.png, upload logo image file to /assets/img/ folder
-    text:           QA      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+    text:           LITE      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
 # Default author settings
 author:
@@ -50,7 +50,7 @@ social:
     youtube:
 
 # Twitter share button
-twitter_username:
+twitter_username: test
 
 # Default footer image settings
 footer:
@@ -97,3 +97,12 @@ collections:
     output: false
   faqs:
     output: false
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

@@ -1,11 +1,14 @@
 // Color scheme variables
-$tm-xsmall-font-size: 0.7rem;
+
+// Primary color
 $tm-primary-color: #0089ff; //#007eff; //#6713d2; //#007eff;
+// Body background
 $tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%); //linear-gradient(to top, #cc208e 0%, #6713d2 100%); //linear-gradient(to top, #3300fd 0%, #007eff 100%);
+
 $tm-primary-color-dark: rgba(0, 0, 0, 0.2);
 $tm-primary-color-xdark: rgba(0, 0, 0, 0.3);
 $tm-primary-color-light: rgba(255, 255, 255, 0.1);
-
+$tm-xsmall-font-size: 0.7rem;
 $tm-letter-spacing-l: 3px;
 $tm-timeline-border-width: 2px;
 $tm-timeline-dot-diameter: 14px;
@@ -32,6 +35,7 @@ $inverse-navbar-toggle-color: rgba(255, 255, 255, 0.7);
 $inverse-navbar-toggle-hover-color: $global-inverse-color;
 $inverse-search-navbar-background: $tm-primary-color-dark;
 $inverse-base-code-color: $inverse-global-muted-color;
+$inverse-base-link-color: $inverse-global-muted-color;
 
 // Base
 $base-body-background: $tm-primary-color;
@@ -54,7 +58,7 @@ $navbar-background: $tm-primary-color;
 $navbar-dropdown-nav-item-color: rgba(255, 255, 255, 0.7);
 $navbar-dropdown-nav-item-hover-color: $global-inverse-color;
 $navbar-nav-item-text-transform: none;
-$search-navbar-font-size: 1.0625rem; //$global-font-size;
+$search-navbar-font-size: 1.0625rem;
 $subnav-item-text-transform: none;
 
 $container-small-max-width: 800px;

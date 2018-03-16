@@ -1,11 +1,10 @@
-# QA is a premium documentation Jekyll theme
+# Lite is a premium documentation Jekyll theme
 
-Desk was developed by [Ivan Chromjak](https://ivanchromjak.com) for [jekyll.plus](https://jekyll.plus/), theme [live demo](https://docs.jekyll.plus/) available.
+Desk was developed by [Ivan Chromjak](https://ivanchromjak.com), theme [live demo](https://lite.jekyll.plus/) available.
 
 ## Features
 
 * Contact form
-* Live Search
 * Responsive videos
 * Image lightbox
 * Google maps
@@ -14,14 +13,15 @@ Desk was developed by [Ivan Chromjak](https://ivanchromjak.com) for [jekyll.plus
 * Contact form (FormSpree)
 * Pre-built pages
 * Disqus comments for posts
-* Configurable home page header images
 * Optimised for [GitHub](https://pages.github.com/) pages
 * RSS feed
 * SEO tags
 * Google Analytics
 
 
-## Installation
+# Getting Started
+
+## Installing the theme
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -36,22 +36,28 @@ bundle exec jekyll serve
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
-## Setup
+## Updating the theme
 
-### Site and author details
+Download the latest version form your Envato downloads page `https://themeforest.net/downloads` [https://themeforest.net/downloads](https://themeforest.net/downloads).
+
+
+# Theme Setup
+
+## Site and author details
+
 Add your site and author details in `_config.yml`:
 ```yaml
 # Site title and description
-title:              Docs - Documentation Jekyll Theme
-description:        Documentation Jekyll theme.
+title:              Lite
+description:        Helpdesk Jekyll Theme
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                "https://docs.jekyll.plus"
+url:                "https://lite.jekyll.plus"
 
 # Site logo, image or text
 brand:
     image:          logo.svg  # e.g. logo.png, upload logo image file to /assets/img/ folder
-    text:           Docs      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+    text:           Lite      # if the above "logo:" image variable  is not set, this text logo is displayed instead
 
 # Default author settings
 author:
@@ -85,14 +91,14 @@ twitter_username:
 
 ```
 
-### Navigation Bar
+## Main navigation bar
 Set in the main navigation links in `_data/navigation_header.yml`:
 ```yaml
 - title: About
   url: /about/
 ```
 
-### Footer
+## Site footer
 
 Edit copyright notice in `_config.yml`:
 ```yaml
@@ -106,7 +112,7 @@ Set in the navigation links in `_data/navigation_footer.yml`:
   url: /about/
 ```
 
-### Enabling comments (via Disqus)
+## Enabling comments (via Disqus)
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post. To enable it, add the following lines to your Jekyll site:
 
@@ -119,7 +125,7 @@ You can find out more about Disqus' shortnames [here](https://help.disqus.com/cu
 
 Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
 
-### Google Analytics
+## Google analytics
 
 To enable Google Anaytics, add the following lines to your Jekyll site:
 
@@ -129,27 +135,11 @@ To enable Google Anaytics, add the following lines to your Jekyll site:
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
-### Google Map
-
-To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
-
-```yaml
-{% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
-```
-
-### Contact Form (via FormSpree)
-
-Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following lines to contact page YAML Front Matter, replacing the email address:
-
-```yaml
-formspree:
-    email: my_name@gmail.com
-    redirect: /thanks/
-```
-
-### Update favicon
+## Updating favicon
 
 You can find the current favicon (favicon.png) inside the theme `/assets/img/` directory, just replace it with your new favicon.
+
+# Content
 
 ## Posts
 
@@ -178,7 +168,7 @@ You can rebuild the site in many different ways, but the most common way is to r
 
 To keep things more organized, add post images to `/assets/posts/` directory, and add theme images to `/assets/img/` directory.
 
-### Adding images
+## Adding images
 To add an image to a post or page use the following codes:
 Local image from `/assets/posts/` directory:
 ```yaml
@@ -189,7 +179,7 @@ External wide image with lightbox:
 {% include image.html img="https://source.unsplash.com/TT-ROxWj9nA.jpg" lightbox="true" alt="Alt for image" caption="Image in lightbox" %}
 ```
 
-### Adding table of contents
+## Adding table of contents
 Add the following code at the top of the post:
 ```
 #### Sections in this article
@@ -199,7 +189,7 @@ Add the following code at the top of the post:
 ```
 `{:.no_toc}` exludes `#### Sections in this article` title from indexing in table of contents
 
-### Responsive Videos
+## Responsive Videos
 Embed local videos:
 ```html
 <video controls playsinline uk-video="automute: true">
@@ -222,25 +212,13 @@ To create a home page, just create a `index.md` file inside the root directory. 
 ---
 layout: home
 hero:
-    title: How Can We Help?     # hero section settings
-    subtitle: Search or browse in depth articles and videos on everything Jekyll, from basic theme setup and hosting to customisation and development
-    image: imac.svg             # display small image above title
-    search: true                # enable search
-categories:
-    columns: 3                  # number of category columns; 1, 2, 3, 4
-    title: Browse Topics
-    subtitle: Get your answers fast, jump to most popular documentation content
-featured:                       # featured docs section settings
-    title: Popular Articles
-tag: featured                   # tag used to populate featured section on home page
-section:                        # display page content
-    title: Need More?
-    subtitle: This section displays optional page content lorem ipsum
-cta:                            # call to action section
-    title: Didn't find an answer to your question?
-    subtitle: Get in touch with us for details on additional services and custom work pricing
-    button_text: Contact Us   
-    button_url: /contact/  
+  title: How Can We Help?
+  subtitle: SELF SERVICE KNOWLEDGE BASE
+cta:
+  title: Didn't find an answer to your question?
+  button_text: Contact Us   
+  button_url: /contact/
+filter: true
 ---
 ```
 
@@ -259,34 +237,14 @@ Home page category boxes are added in `_data/navigation_home.yml`, e.g.:
 
 All available icons can be found [here](https://getuikit.com/docs/icon#library).
 
-## Docs
+## Support Posts
 
-To create a document post, just create a new page inside the root directory and add the following code in content:
-```
-{% include faqs.html %}
-```
-
-Create new doc post entries in `_docs` folder, similar to creating posts, but with following front matter settings:
+Create new support post entries in `_support` folder, similar to creating posts, but with following front matter settings:
 
 ```yml
 ---
-
 title: Category hosting Setting up new domain and page
-subtitle: This is optional doc subtitle
-tags: featured development
-author: peter
 ---
-```
-
-Sidebar navigation on docs post can edited in `_data/navigation_docs.yml`:
-
-```yml
-- title: Getting Started    # Section title
-  docs:
-  - home                    # Doc file name from _docs folder
-  - quickstart
-  - installation
-  - windows
 ```
 
 ## Changelog page
@@ -305,21 +263,41 @@ Changelog enties are added in `_data/changelog.yml`:
 
 ```yml
 - title: Version 0.6.0
-  label:
   date: Aug 15, 2017
   list:
   - Added style support for radio and checkbox in Firefox
   - Removed class from Section component
 ```
 
+# Addon Includes
+
+## Google Map
+
+To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
+
+```yaml
+{% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
+```
+
+## Contact Form (via FormSpree)
+
+To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
+
+Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following include to a page, replacing the email address:
+
+```yaml
+{% include formspree.html email="john@company.com" redirect="/thanks" %}
+```
 
 ## Customization
 
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
 
 ```scss
-// Main content
-$color-main: #0F1214;
+// Primary color
+$tm-primary-color: #0089ff;
+// Body background
+$tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%);
 ```
 
 Further style customisation can be done in the following files:
