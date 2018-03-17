@@ -34,7 +34,7 @@ layout: default
 
 </script>
 
-<section class="tm-margin-large-top">
+<div class="tm-margin-large-top">
     <div class="uk-container uk-text-center">
 
         {% if page.hero.subtitle %}<p class="uk-margin-remove-bottom tm-overtitle uk-margin-top uk-text-uppercase letter-spacing-l text-shadow uk-text-muted" data-uk-scrollspy="cls: uk-animation-slide-bottom; delay: 100">{{ page.hero.subtitle }}</p>{% endif %}
@@ -52,9 +52,9 @@ layout: default
         </div>
 
     </div>
-</section>
+</div>
 
-<section>
+<div>
     <div class="uk-container uk-container-small">
 
         {% for article in site.support %}
@@ -88,7 +88,7 @@ layout: default
 
     </div>
 
-</section>
+</div>
 
 {% if page.cta %}
   {% include cta.html %}
