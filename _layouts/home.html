@@ -12,12 +12,10 @@ layout: default
     var items = document.getElementsByClassName('uk-card-box');
     for(var i=0; i < items.length; i++) {
       items[i].classList.remove('active');
-      //items[i].classList.add('uk-card-default');
     }
     // set the selected id's item to active
     var item = document.getElementById(id + '-card');
     if(item) {
-      //item.classList.remove('uk-card-default');
       item.classList.add('active');
     }
   }
@@ -29,9 +27,7 @@ layout: default
     }
     // remove the hidden class from the list corresponding to the selected id
     var list = document.getElementById(id + '-article');
-    //var section = document.getElementById('category-section');
     if(list) {
-      //section.classList.remove('hidden');
       list.classList.remove('hidden');
     }
   }
@@ -65,34 +61,34 @@ layout: default
 
           <article id="{{ article.title | slugify }}-article" class="article article-support">
 
-            <h1 class="uk-margin-medium-bottom text-shadow">{{ article.title }}<a href="#" data-uk-totop data-uk-scroll class="uk-float-right"></a></h1>
+            <h2 class="article-support-title uk-margin-medium-bottom text-shadow">{{ article.title }}<a href="#" data-uk-totop data-uk-scroll class="uk-float-right"></a></h2>
             <hr class="article-support-rule">
 
+            {% if article.toc %}
             <div class="article-toc-{{ forloop.index }}"></div>
+            {% endif %}
 
             <div class="article-content article-content-{{ forloop.index }}">{{ article.content }}</div>
 
-
           </article>
 
-          <script type="text/javascript">
-
-            tocbot.init({
-              tocSelector: '.article-toc-{{ forloop.index }}',
-              contentSelector: '.article-content-{{ forloop.index }}',
-              headingSelector: 'h2',
-              scrollSmooth: true,
-              scrollSmoothDuration: 400,
-            });
-
-          </script>
+          {% if article.toc %}
+            <script>
+              tocbot.init({
+                tocSelector: '.article-toc-{{ forloop.index }}',
+                contentSelector: '.article-content-{{ forloop.index }}',
+                headingSelector: 'h3',
+                scrollSmooth: true,
+                scrollSmoothDuration: 400,
+              });
+            </script>
+          {% endif %}
 
         {% endfor %}
 
     </div>
 
 </section>
-
 
 {% if page.cta %}
   {% include cta.html %}

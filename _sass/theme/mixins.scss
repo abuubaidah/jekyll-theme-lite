@@ -62,10 +62,10 @@
   }
 }
 
-#markdown-toc {
+.toc-list {
   padding: 0;
   list-style: none;
-  margin: 0 0 $global-xlarge-margin 0;
+  margin: $global-medium-margin 0 $global-xlarge-margin 0;
   font-size: 1.111rem;
   >li {
     margin-top: $list-large-margin-top / 2;
@@ -115,14 +115,22 @@
   .uk-totop {
     margin-top: 15px;
   }
+  h3 {
+    font-size: $global-xlarge-font-size;  
+  }
+}
+
+.article-support-title {
+  font-size: $global-xxlarge-font-size;
+  font-weight: 800;
 }
 
 .article-support .article-content {
   margin-top: $global-medium-margin;
-  >h2:not(:first-child) {
+  >h3:not(:first-child) {
     margin-top: $global-xlarge-margin;
   }
-  >h2 {
+  >h3 {
     margin-bottom: $global-medium-margin;
     &::before {
         display: block;
@@ -133,8 +141,7 @@
     }
     &:focus{
       outline: none;
-}
-
+    }
   }
 }
 
@@ -143,6 +150,7 @@
 }
 
 .article-faq-title {
+  font-size: $global-xlarge-font-size;
   letter-spacing: 1px;
   margin-right: 30px;
   .tm-totop {

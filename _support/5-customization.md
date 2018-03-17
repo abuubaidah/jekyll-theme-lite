@@ -1,9 +1,10 @@
 ---
 title: Customization
 icon: code
+toc: true
 ---
 
-## Theme Color Customization
+### Theme Color Customization
 
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
 
@@ -21,7 +22,7 @@ Further style customisation can be done in the following files:
 /assets/css/main.scss
 ```
 
-## Further Development
+### Further Development
 
 Install [UIkit](https://getuikit.com/) font end framework dependency via Npm:
 ```bash

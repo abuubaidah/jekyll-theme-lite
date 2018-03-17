@@ -1,9 +1,10 @@
 ---
 title: Addon Includes
 icon: plus
+toc: true
 ---
 
-## Google Map Include
+### Google Map Include
 
 To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
 
@@ -13,7 +14,7 @@ To display Google map on contact page, add the following in your page content, r
 ```
 {% endraw %}
 
-## Contact Form Include (via FormSpree)
+### Contact Form Include (via FormSpree)
 
 To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
 

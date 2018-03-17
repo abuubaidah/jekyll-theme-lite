@@ -1,9 +1,10 @@
 ---
 title: Adding Content
 icon: file-edit
+toc: true
 ---
 
-## Creating news posts
+### Creating news posts
 
 To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
 ```
@@ -30,7 +31,7 @@ You can rebuild the site in many different ways, but the most common way is to r
 
 To keep things more organized, add post images to `/assets/posts/` directory, and add theme images to `/assets/img/` directory.
 
-## Adding images to posts
+### Adding images to posts
 To add an image to a post or page use the following codes:
 Local image from `/assets/posts/` directory:
 
@@ -48,17 +49,13 @@ External wide image with lightbox:
 ```
 {% endraw %}
 
-## Adding table of contents
-Add the following code at the top of the post:
+### Adding table of contents
+Add the following to the front matter of the support post:
 ```
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
+toc: true
 ```
-`{:.no_toc}` exludes `#### Sections in this article` title from indexing in table of contents
 
-## Responsive videos
+### Responsive videos
 Embed local videos:
 ```html
 <video controls playsinline uk-video="automute: true">
@@ -73,7 +70,7 @@ Embed YouTube videos:
 
 To create a draft post, create the post file under the `_drafts` directory, and you can find more information in [Working with Drafts](https://jekyllrb.com/docs/drafts/).
 
-## Creating home page
+### Creating home page
 
 To create a home page, just create a `index.md` file inside the root directory. The following is a YAML Front Matter example for a page:
 
@@ -91,7 +88,7 @@ filter: true
 ---
 ```
 
-## Support Posts
+### Support Posts
 
 Create new support post entries in `_support` folder, similar to creating posts, but with following front matter settings:
 
@@ -104,7 +101,7 @@ icon: heart
 
 All available icons can be found [here](https://getuikit.com/docs/icon#library).
 
-## Creating changelog page
+### Creating changelog page
 
 Create  new page with the following front matter:
 

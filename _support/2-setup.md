@@ -1,9 +1,10 @@
 ---
 title: Theme Setup
 icon: settings
+toc: true
 ---
 
-## Site and author details
+### Site and author details
 
 Add your site and author details in `_config.yml`:
 ```yaml
@@ -25,14 +26,14 @@ author:
     github:         username    # Github username for avatar
 ```
 
-## Main navigation bar
+### Main navigation bar
 Set in the main navigation links in `_data/navigation_header.yml`:
 ```yaml
 - title: About
   url: /about/
 ```
 
-## Site footer setup
+### Site footer setup
 
 Edit copyright notice in `_config.yml`:
 ```yaml
@@ -46,7 +47,7 @@ Set in the navigation links in `_data/navigation_footer.yml`:
   url: /about/
 ```
 
-## Enabling comments (via Disqus)
+### Enabling comments (via Disqus)
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post. To enable it, add the following lines to your Jekyll site:
 
@@ -59,7 +60,7 @@ You can find out more about Disqus' shortnames [here](https://help.disqus.com/cu
 
 Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
 
-## Adding Google analytics
+### Adding Google analytics
 
 To enable Google Anaytics, add the following lines to your Jekyll site:
 

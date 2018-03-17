@@ -179,8 +179,11 @@ External wide image with lightbox:
 {% include image.html img="https://source.unsplash.com/TT-ROxWj9nA.jpg" lightbox="true" alt="Alt for image" caption="Image in lightbox" %}
 ```
 
-## Adding table of contents
-Add the following code at the top of the post:
+### Adding table of contents
+Add the following to the front matter of the support post:
+```
+toc: true
+```
 
 ## Responsive Videos
 Embed local videos:
