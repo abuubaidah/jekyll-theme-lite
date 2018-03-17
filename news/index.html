@@ -12,7 +12,7 @@ title: What's New
         <div class="uk-card uk-card-primary uk-card-hover card-post uk-inline uk-border-rounded uk-width-1-1 uk-margin-medium">
             <a class="uk-position-cover" href="{{ post.url | relative_url }}"></a>
             <div class="uk-card-header">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-grid-small uk-flex-middle" data-uk-grid>
                     {% if page.author %}
                       {% assign author = site.authors[page.author] %}
                     {% else %}
