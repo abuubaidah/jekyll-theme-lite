@@ -3,9 +3,6 @@ title: Customization
 icon: code
 ---
 
-* TOC
-{:toc}
-
 ## Theme Color Customization
 
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:

@@ -3,9 +3,6 @@ title: Adding Content
 icon: file-edit
 ---
 
-* TOC
-{:toc}
-
 ## Creating news posts
 
 To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:

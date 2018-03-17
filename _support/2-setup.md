@@ -3,9 +3,6 @@ title: Theme Setup
 icon: settings
 ---
 
-* TOC
-{:toc}
-
 ## Site and author details
 
 Add your site and author details in `_config.yml`:

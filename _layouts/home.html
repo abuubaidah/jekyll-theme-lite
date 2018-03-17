@@ -35,6 +35,7 @@ layout: default
       list.classList.remove('hidden');
     }
   }
+
 </script>
 
 <section class="tm-margin-large-top">
@@ -67,23 +68,31 @@ layout: default
             <h1 class="uk-margin-medium-bottom text-shadow">{{ article.title }}<a href="#" data-uk-totop data-uk-scroll class="uk-float-right"></a></h1>
             <hr class="article-support-rule">
 
-            <div class="article-content">{{ article.content }}</div>
+            <div class="article-toc-{{ forloop.index }}"></div>
+
+            <div class="article-content article-content-{{ forloop.index }}">{{ article.content }}</div>
+
 
           </article>
+
+          <script type="text/javascript">
+
+            tocbot.init({
+              tocSelector: '.article-toc-{{ forloop.index }}',
+              contentSelector: '.article-content-{{ forloop.index }}',
+              headingSelector: 'h2',
+              scrollSmooth: true,
+              scrollSmoothDuration: 400,
+            });
+
+          </script>
 
         {% endfor %}
 
     </div>
 
-    <script>
-        // Table of contents scroll to
-        UIkit.scroll('#markdown-toc a', {
-            duration: 400,
-            offset: 120
-        });
-    </script>
-
 </section>
+
 
 {% if page.cta %}
   {% include cta.html %}

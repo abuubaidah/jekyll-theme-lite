@@ -3,9 +3,6 @@ title: Addon Includes
 icon: plus
 ---
 
-* TOC
-{:toc}
-
 ## Google Map Include
 
 To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:

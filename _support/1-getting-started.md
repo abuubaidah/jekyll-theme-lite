@@ -3,9 +3,6 @@ title: Getting Started
 icon: cog
 ---
 
-* TOC
-{:toc}
-
 ## Installing the theme
 
 Install the dependencies with [Bundler](http://bundler.io/):
@@ -23,4 +20,4 @@ You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-m
 
 ## Updating the theme
 
-Download the latest version form your Envato downloads page `https://themeforest.net/downloads` and repeat the installation process. 
+Download the latest version form your Envato downloads page `https://themeforest.net/downloads` and repeat the installation process.
