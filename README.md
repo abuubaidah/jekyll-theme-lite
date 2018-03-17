@@ -181,13 +181,6 @@ External wide image with lightbox:
 
 ## Adding table of contents
 Add the following code at the top of the post:
-```
-#### Sections in this article
-{:.no_toc}
-* TOC
-{:toc}
-```
-`{:.no_toc}` exludes `#### Sections in this article` title from indexing in table of contents
 
 ## Responsive Videos
 Embed local videos:
