@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "ncp node_modules/uikit/src/scss/ _sass/uikit/",
     "lint": "jshint assets/js/custom.js",
-    "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js -m -c -o assets/js/main.js",
-    "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js -b -o assets/js/main.js",
+    "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/tocbot/dist/tocbot.js -m -c -o assets/js/main.js",
+    "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/tocbot/dist/tocbot.js -b -o assets/js/main.js",
     "dev": "npm run lint && npm run concat",
     "build": "npm run lint && npm run uglify",
     "watch": "watch 'npm run dev' assets/js/",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/",
   "dependencies": {
+    "tocbot": "^4.3.0",
     "uikit": "^3.0.0-beta.40"
   },
   "devDependencies": {
