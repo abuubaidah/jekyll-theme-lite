@@ -1,4 +1,4 @@
-# Lite
+# [Lite Jekyll Theme](https://lite.jekyll.plus/)
 
 [![GitHub license](https://img.shields.io/github/license/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/issues)
