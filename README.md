@@ -26,6 +26,7 @@ Lite is a Jekyll theme for customer self-service support site. Theme [demo](http
   - [Images](#images)
   - [Videos](#videos)
   - [Comments](#comments)    
+- [Contributing](#contributing)
 - [Development](#development)
 - [Credits](#credits)
 
@@ -218,9 +219,23 @@ Further style customisation can be done in the following files:
 /_sass/theme/variables.scss
 ```
 
+## Contributing
+
+Having trouble working with the theme or found a bug or typo? Interested in adding a feature or fixing a bug? Submit an issue or pull request.
+
+Before requesting features or submitting a pull requests, please ask yourself if it is something that most people will use, if not sure just ask.
+
+### Pull Requests
+When submitting a pull request:
+
+1. Clone the repository
+2. Create a branch off of master branch and give it a meaningful name e.g. new-feature-name.
+3. Open a pull request on GitHub and describe the feature or fix.
+
+
 ## Author
 
-Lite was developed by [Ivan Chromjak](https://ivanchromjak.com)
+Lite was developed by [Ivan Chromjak](https://ivanchromjak.com).
 
 ## Credits
 
@@ -228,3 +243,4 @@ Lite was developed by [Ivan Chromjak](https://ivanchromjak.com)
 - Google maps https://www.google.com/maps
 - UIkit front end framework https://getuikit.com/
 - Jekyll https://jekyllrb.com/
+- FormSpree https://formspree.io/

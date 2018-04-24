@@ -6,7 +6,7 @@ toc: true
 
 ### Product Support
 
-Customer support is provided through our Envato profile page [contact form](https://themeforest.net/user/pressapps) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 48h.
+Feel free to fork or clone the theme. I'll Appreciate it if you keep the Author & Github link at footer or give it a Star if you like it. If you come across any issues just open an [issue](https://github.com/ivanchromjak/jekyll-theme-lite/issues).
 
 ### Credits and Sources
 

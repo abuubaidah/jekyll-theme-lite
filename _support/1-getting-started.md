@@ -6,7 +6,7 @@ toc: true
 
 ### Installing the theme
 
-Install the dependencies with [Bundler](http://bundler.io/):
+Clone the theme [repository](https://github.com/ivanchromjak/jekyll-theme-lite) from GitHub and install the dependencies with [Bundler](http://bundler.io/):
 
 ```bash
 bundle install
