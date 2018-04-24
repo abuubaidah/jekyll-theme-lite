@@ -1,5 +1,10 @@
 # Lite
 
+[![GitHub license](https://img.shields.io/github/license/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/ivanchromjak/jekyll-theme-lite.svg)](https://github.com/ivanchromjak/jekyll-theme-lite/issues)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-0070ba.svg?logo=paypal)](https://www.paypal.me/ivanchromjak)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/ivanchromjak/jekyll-theme-lite.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivanchromjak%2Fjekyll-theme-lite)
+
 Lite is a Jekyll theme for customer self-service support site. Theme [demo](https://lite.jekyll.plus/) site.
 
 ![screenshot](https://lite.jekyll.plus/assets/img/screenshot.png)
