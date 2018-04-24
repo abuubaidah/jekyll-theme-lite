@@ -26,7 +26,7 @@
   "homepage": "https://github.com/",
   "dependencies": {
     "tocbot": "^4.3.0",
-    "uikit": "^3.0.0-beta.40"
+    "uikit": "^3.0.0-beta.42"
   },
   "devDependencies": {
     "jshint": "latest",

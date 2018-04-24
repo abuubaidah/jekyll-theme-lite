@@ -2,7 +2,8 @@
 .DS_Store
 node_modules
 
-# Jekyllg
+# Jekyll
 _site
 .sass-cache
 .jekyll-metadata
+package-lock.json

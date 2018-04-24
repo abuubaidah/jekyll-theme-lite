@@ -1,3 +1,6 @@
+
+{:toc}
+
 # Lite is a premium documentation Jekyll theme
 
 Desk was developed by [Ivan Chromjak](https://ivanchromjak.com), theme [live demo](https://lite.jekyll.plus/) available.
