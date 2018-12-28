@@ -77,9 +77,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (>= 3.4.1)
+  jekyll (~> 3.7)
   jekyll-avatar
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.10)
   jekyll-gist
   jekyll-livereload
   jekyll-paginate (~> 1.1)
