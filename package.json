@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/",
   "dependencies": {
-    "tocbot": "^4.3.0",
-    "uikit": "^3.0.0-beta.42"
+    "tocbot": "^4.4.2",
+    "uikit": "^3.0.0-rc.25"
   },
   "devDependencies": {
-    "jshint": "latest",
+    "jshint": "^2.9.7",
     "ncp": "latest",
-    "uglify-js": "latest",
+    "uglify-js": "^3.4.9",
     "watch": "latest"
   }
 }
